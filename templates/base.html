@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %}</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/master.css') }}">
+</head>
+<body>
+	<header>
+		<h1>Nav</h1>
+		<p>Programmer, High School Student, Crazy</p>
+	</header>
+	{% block section %}
+	{% endblock %}
+</body>
+</html>
