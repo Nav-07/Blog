@@ -20,6 +20,11 @@ def blog(name):
 	# Show the Blog corresponding to the name
 	return render_template('blog_template.html', content=read_markdown('blog/'+name+'.md'))
 
+@app.route('/about')
+def about():
+	# Add the about page stuff right here
+	pass
+
 # Run the App
 if __name__ == '__main__':
 	app.run(debug=True)
